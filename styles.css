@@ -1,1 +1,79 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
 
+:root {
+    --primary-color: #2c2094;
+    --secondary-color: #eff1f1;
+    --text-color: #000203fb; 
+    --background-color: #ffffff;
+    --button-hover: #dd1fa4;
+    --font-body: "Montserrat", sans-serif;
+    --font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }  
+
+p {
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
